@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+body {
+	@apply text-gray-200 text-[1.1em] scroll-smooth bg-gray-900 m-0 bg-gray-900
+}
+.link {
+	font-weight: 500;
+	@apply transition duration-100 hover:scale-120 hover:font-light hover:bg-transparent; 
+}
