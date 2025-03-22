@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+
+body {
+  @apply text-white bg-gray-800
+}
+
+.link {
+  @apply transition duration-300 hover:scale-120
+}
+
+.bg-image {
+  background-image: url('wallpaper.jpg');
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px); /* Memindahkan elemen sedikit ke atas */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Kembali ke posisi normal */
+  }
+}
+.fade-down {
+  @apply transition-opacity duration-500 ease-in-out;
+  animation: fadeDown 0.5s ease-in-out; /* Durasi 0.5 detik dan easing */
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px); /* Memindahkan elemen sedikit ke kanan */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Kembali ke posisi normal */
+  }
+}
+.fade-right {
+  @apply transition-opacity duration-500 ease-in-out; /* Menggunakan kelas Tailwind untuk transisi */
+  animation: fadeRight 0.5s ease-in-out; /* Menerapkan animasi kustom */
+}
+
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px); /* Memindahkan elemen sedikit ke kiri */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Kembali ke posisi normal */
+  }
+}
+.fade-left {
+  @apply transition-opacity duration-500 ease-in-out; /* Menggunakan kelas Tailwind untuk transisi */
+  animation: fadeLeft 0.5s ease-in-out; /* Menerapkan animasi kustom */
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade {
+  @apply transition-opacity duration-500 ease-in-out; /* Menggunakan kelas Tailwind untuk transisi */
+  animation: fade 1s ease-in-out; /* Menerapkan animasi kustom */
+}
